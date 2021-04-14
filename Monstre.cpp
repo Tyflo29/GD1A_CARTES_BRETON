@@ -2,12 +2,17 @@
 #define MONSTRE_CPP
 
 #include "Monstre.h"
-#include <iostream>
 #include <string>
+#include <iostream>
+    
+    Monstre::Monstre(std::string name){
+        _nom = name;
+    }
+    Monstre::Monstre(){
+        _nom = "Slime";
+    }
 
-    Monstre::Monstre() {}
-
-    /*//////////////////////////////////////////
+    ///////////////////////////////////////////
     int Monstre::vieMonstre() {
         return _tableau[0];
     }
@@ -17,7 +22,7 @@
     bool Monstre::fatiqueMonstre() {
         return _fatique;
     }
-    *///////////////////////////////////////////
+    ///////////////////////////////////////////
     
     void Monstre::afficheMonstre() {
        std::cout << _nom << std::endl;
