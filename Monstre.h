@@ -1,21 +1,25 @@
 #ifndef MONSTRE_H
 #define MONSTRE_H
 
-#include "ZoneDeJeu.h"
 #include <string>
+#include <vector>
 
 class Monstre{
 
     private:
-        string _nom = "Slime";
-        int _vie = 6;
-        int _attaque = 3;
-        bool fatique = false;
+        std::string _nom = "Slime";
+        int _vie = _tableau[0];
+        int _attaque = _tableau[1];
+        bool _fatique = false;
     
     public:
         Monstre();
+        std::vector<int> _tableau = {6,3};
+        int vieMonstre();
+        int atqMonstre();
+        bool fatiqueMonstre();
         void afficheMonstre();
-        void attaqueMonstre();
+        int attaqueMonstre(int attaqueAdversaire);
         bool detruireMonstre();
         void finTour();
 
