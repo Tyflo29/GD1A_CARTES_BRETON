@@ -14,7 +14,6 @@ class Monstre{
     
     public:
         Monstre();
-        Monstre(std::string name);
         std::vector<int> _tableau = {6,3};
         int vieMonstre();
         int atqMonstre();

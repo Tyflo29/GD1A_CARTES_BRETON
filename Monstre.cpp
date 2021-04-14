@@ -5,9 +5,6 @@
 #include <string>
 #include <iostream>
     
-    Monstre::Monstre(std::string name){
-        _nom = name;
-    }
     Monstre::Monstre(){
         _nom = "Slime";
     }
